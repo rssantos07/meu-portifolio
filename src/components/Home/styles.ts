@@ -13,6 +13,7 @@ export const Container = styled.div`
   margin: 40px 0px;
   @media (max-width: 767px) {
     max-width: 100%;
+    margin-top: 10px;
   }
 `
 export const Apresentation = styled.div`
