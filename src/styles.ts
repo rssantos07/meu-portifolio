@@ -19,6 +19,12 @@ body {
   background-position: center;  /* Centraliza a imagem */
   background-repeat: no-repeat; /* Não repete a imagem */
   background-attachment: fixed; /* Mantém a imagem fixa no fundo */
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+    max-width: 94%;
+    background-size: cover;
+    margin: 0 auto;
+  }
 }
 
 .slide-in {

@@ -18,6 +18,17 @@ export const Header = styled.div`
     font-size: 24px;
     padding: 50px;
   }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 40px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
 `
 
 export const Section = styled.div`
@@ -27,6 +38,12 @@ export const Section = styled.div`
   color: white;
   align-content: center;
   margin-top: 40px;
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 export const Article = styled.div`
   display: flex;
@@ -35,7 +52,6 @@ export const Article = styled.div`
   background-color: #0a8aa2;
   border-radius: 5px;
   padding: 12px;
-
   h3 {
     font-size: 28px;
     background-color: rgba(0, 0, 0, 0.4);

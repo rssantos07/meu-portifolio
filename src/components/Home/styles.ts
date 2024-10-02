@@ -11,6 +11,9 @@ export const Container = styled.div`
   border: solid 2px white;
   border-radius: 24px;
   margin: 40px 0px;
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 `
 export const Apresentation = styled.div`
   display: flex;
@@ -32,6 +35,17 @@ export const Apresentation = styled.div`
     font-size: 40px;
     font-weight: bold;
   }
+  @media (max-width: 767px) {
+    max-width: 100%;
+    h3 {
+      font-size: 35px;
+      margin-bottom: 60px;
+      margin-left: 45px;
+    }
+    h2 {
+      font-size: 90px;
+    }
+  }
 `
 
 export const Link = styled.div`
@@ -43,5 +57,15 @@ export const Link = styled.div`
     font-size: 24px;
     text-decoration: none;
     color: black;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 1rem;
+    a {
+      font-size: 24px;
+      margin-bottom: 60px;
+    }
   }
 `
